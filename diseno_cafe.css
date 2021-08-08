@@ -1,0 +1,27 @@
+
+:root{  --fuenteparrafo: 'Open Sans' , sans-serif;
+        --fuentehead: 'PT Sans', sans-serif;
+        --colorprimario: rgb(199, 93, 27);
+        --blanco:rgb(255, 255, 255);
+        --negro: rgb(0, 0, 0);
+}
+
+/* simpre va esto*/
+html {
+      font-size: 62.5%;/*un rem  vale 1px gracias a este codigo*/
+      /**hack de rems espara que los rem sea mas precisos**/
+
+      box-sizing: border-box;
+      /*solucion de la caja de html con las dimensiones*/
+}
+  *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+      font-size: 1.6rem;
+      /**hack de rems espara que los rem sea mas precisos**/
+      font-family: var(--fuenteparrafo);
+      line-height: 2; /*interlineado de la base*/
+   /*los blogs se mira mejor con un interlineado mas alto de 1.5  mjor 2*/
+}
