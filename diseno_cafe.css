@@ -25,3 +25,46 @@ body {
       line-height: 2; /*interlineado de la base*/
    /*los blogs se mira mejor con un interlineado mas alto de 1.5  mjor 2*/
 }
+ /*global*/
+.contenedor{ max-width: 120rem;
+             margin: 0;
+             width: 90%
+
+}
+
+a { text-decoration: none;/*eliminar las lineas de los enlaces*/
+
+}
+
+h1 , h2 , h3 , h4 { font-family:  var(--fuentehead);
+
+}
+h1{ font-size: 4.8rem;
+
+}
+h2{ font-size: 4rem;
+
+
+}
+h3{ font-size: 3.2rem;
+
+
+}
+h4{ font-size: 2.8rem;
+}
+
+img{ max-width: 100%;
+
+}
+
+ /*utilidades*/
+.no_margi{ margin: 0; /*quitar margenes*/
+
+}
+
+.no_paddin{ padding: 0;
+
+}
+
+.centar_texto{ text-align: center;
+}
