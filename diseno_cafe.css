@@ -26,9 +26,10 @@ body {
    /*los blogs se mira mejor con un interlineado mas alto de 1.5  mjor 2*/
 }
  /*global*/
-.contenedor{ max-width: 120rem;
-             margin: 0;
+.contenedor{ max-width: 120rem; /*muy bueno para centrar*/
+             margin: 0 auto;
              width: 90%
+
 
 }
 
@@ -56,9 +57,9 @@ h4{ font-size: 2.8rem;
 img{ max-width: 100%;
 
 }
-
+ /*fin de global*/
  /*utilidades*/
-.no_margi{ margin: 0; /*quitar margenes*/
+.no_margin{ margin: 0; /*quitar margenes*/
 
 }
 
@@ -67,4 +68,60 @@ img{ max-width: 100%;
 }
 
 .centar_texto{ text-align: center;
+}
+/*fin de utilidad*/
+
+.header{ background-image: url("img/banner.jpg");
+         height: 60rem;
+         background-size: cover;/*para que la imagen se centre*/
+         background-repeat: no-repeat;/*la imagen no se repita*/
+         background-position: center center; ;/*la imagen empezara del entro tanto horiontal como vertical*/
+
+
+}
+
+.header_texto{ color: var(--blanco);
+              text-align: center;
+              margin-top: 5rem
+}
+
+
+@media (min-width:1000px) {
+  .barra{
+            display: flex;
+            justify-content:  space-between;
+            align-items: center;/*poner elementos en linea*/
+
+  }
+
+   }
+   @media (max-width:1000px) { /*para celular*/
+     .navegacion_enlace{ display: block;
+                            text-align: center;
+                            font-size: 2rem;
+
+        }
+
+      }
+
+.logo{ text-align: center;
+        margin: 0 ;
+
+}
+
+.logo_nombre{ font-weight: normal;
+
+}
+.logo_negrita{font-weight: 700; /*bajar le a la negrita*/
+
+}
+.logo_negrita , .logo_nombre , .navegacion_enlace{
+  margin: 0;
+  text-align: center;
+  color: var(--blanco)
+
+}
+
+.navegacion_enlace{ margin-left: 2rem; /*tambien se puede usar gap de dos 2em*/
+
 }
