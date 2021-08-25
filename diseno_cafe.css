@@ -27,7 +27,7 @@ body {
 }
  /*global*/
 .contenedor{ max-width: 120rem; /*muy bueno para centrar*/
-             margin: 0 auto;
+             margin: 0 auto ;
              width: 90%
 
 
@@ -89,7 +89,7 @@ img{ max-width: 100%;
 @media (min-width:1000px) {
   .barra{
             display: flex;
-            justify-content:  space-between;
+            justify-content: space-between;
             align-items: center;/*poner elementos en linea*/
 
   }
@@ -124,4 +124,24 @@ img{ max-width: 100%;
 
 .navegacion_enlace{ margin-left: 2rem; /*tambien se puede usar gap de dos 2em*/
 
+}
+
+@media (min-width:1000px) {
+  .contenedor_principal{
+            display: grid;
+
+  }
+
+   }
+
+
+   @media (min-width:1000px) { /*para celular*/
+     .contenedor_principal{  display: grid;
+                             grid-template-columns: 2fr 1fr;
+                             column-gap: 4rem;
+        }
+
+      } /*onfiguracion para pantallas gardes mas de 1000px*/
+.boton{ /*debera llamar se entrada boton*/
+  
 }
