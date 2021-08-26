@@ -4,6 +4,7 @@
         --colorprimario: rgb(199, 93, 27);
         --blanco:rgb(255, 255, 255);
         --negro: rgb(0, 0, 0);
+        --gris:rgb(230, 230, 230);
 }
 
 /* simpre va esto*/
@@ -143,5 +144,36 @@ img{ max-width: 100%;
 
       } /*onfiguracion para pantallas gardes mas de 1000px*/
 .boton{ /*debera llamar se entrada boton*/
-  
+
 }
+
+.entrada{/*agrgando border hacia abajo*/
+          border-bottom: 10px solid var(--gris) ;/**/
+          margin-bottom: 3rem;/*espacio de dos rem*/
+
+}
+.entrada:last-of-type{ /*quitar los border de la ultama seleccion*/
+                     border:none;
+                     /*margin-bottom: 0;*/
+}
+
+.boton1{
+        display: block;/*tomar todo el espacio*/
+        font-family: var(--fuentehead);
+        color: var(--blanco);
+        text-align: center;
+        padding: 1rem 2rem;/*izqueerda y derecha*/
+        font-size: 1.8rem;/*interlineado*/
+        text-transform: uppercase;/*colocar mayusculas*/
+        font-weight: bolder;/*negrita*/
+        margin-bottom: 2rem;
+}
+.boton1__primario{  background-color: var(--negro);
+
+}
+
+
+@media (min-width:1000px) { /*para celular*/
+     .boton1{  display: inline-block;/*para recortar background-color en modo pantalla completa*/
+
+        }
